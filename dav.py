@@ -42,7 +42,7 @@ for data in response:
 
 
     cbu_list_request = onevizion.Trackor(trackorType='DAVREESTR', URL=url, userName=login, password=password)
-
+if getdav['data']['result_code'] < 3 :
     cbu_list_request.update(data['TRACKOR_ID'],
                             fields={
                                 'DAVR_INTEGRATION': 0,
@@ -62,12 +62,35 @@ for data in response:
                                 'DAVR_CERT_S_N': getdav['data']['cert_s_n'],
                                 'DAVR_OBJECT_BAN': getdav['data']['err_text'],
                                 'DAVR_OWNER': getdav['data']['subjects']['name'],
+                                'DAVR_OWNERSHIP_PERCENTAGE': getdav['data']['percent'],
 
 
                             }
                             )
+else :
+
+    cbu_list_request.update(data['TRACKOR_ID'],
+                            fields={
+                                'DAVR_INTEGRATION': 0,
+                                'DAVR_CADASTRAL_STATUS': zapret,
+                                'DAVR_SOATO': "17" + getdav['data']['region_id'] + getdav['data']['area_id'],
+                                'DAVR_STATUS_CODE': getdav['data']['result_code'],
+                                'DAVR_CADASTRAL_NUMBER': getdav['data']['kadastr_no'],
+                                'DAVR_NUMBER_OF_BUILDINGS': getdav['data']['count_objects'],
+                                'DAVR_REGION': getdav['data']['region_name'],
+                                'DAVR_AREA': getdav['data']['area_name'],
+
+                                'DAVR_LAND_AREA': getdav['data']['area'],
+                                'DAVR_LOCATION': getdav['data']['location'],
 
 
+                                'DAVR_CERT_S_N': getdav['data']['cert_s_n'],
+                                'DAVR_OBJECT_BAN': getdav['data']['err_text'],
+
+
+
+                            }
+                            )
 
 
 
