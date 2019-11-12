@@ -51,6 +51,8 @@ for data in response:
                                 'DAVR_STATUS_CODE': getdav['data']['result_code'],
                                 'DAVR_CADASTRAL_NUMBER': getdav['data']['kadastr_no'],
                                 'DAVR_NUMBER_OF_BUILDINGS': getdav['data']['count_objects'],
+                                'DAVR_REGION': getdav['data']['region_name'],
+                                'DAVR_AREA': getdav['data']['area_name'],
 
 
                                 'DAVR_LAND_AREA': getdav['data']['area'],
@@ -64,6 +66,7 @@ for data in response:
 
                             }
                             )
+
 
 
 

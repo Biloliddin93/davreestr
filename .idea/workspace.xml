@@ -29,6 +29,35 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="dav" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="davreestr" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dav.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dav" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -40,7 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1573554623827</updated>
       <workItem from="1573554624989" duration="2610000" />
-      <workItem from="1573558183113" duration="12000" />
+      <workItem from="1573558183113" duration="1037000" />
+      <workItem from="1573561316670" duration="7000" />
     </task>
     <servers />
   </component>
