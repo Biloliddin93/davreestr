@@ -49,9 +49,40 @@ for data in response:
                                 'DAVR_CADASTRAL_STATUS': zapret,
                                 'DAVR_SOATO': "17"+getdav['data']['region_id']+getdav['data']['area_id'],
                                 'DAVR_STATUS_CODE': getdav['data']['result_code'],
+                                'DAVR_CADASTRAL_NUMBER': getdav['data']['kadastr_no'],
+                                'DAVR_NUMBER_OF_BUILDINGS': getdav['data']['count_objects'],
+                                'DAVR_REGION': getdav['data']['region_name'],
+                                'DAVR_AREA': getdav['data']['area_name'],
+                                'DAVR_LAND_AREA': getdav['data']['area'],
+                                'DAVR_LOCATION': getdav['data']['location'],
+                                'DAVR_CADASTRAL_PRICE': getdav['data']['land_price'],
+                                'DAVR_REGISTRATION_DATE': getdav['data']['reg_d_n'],
+                                'DAVR_CERT_S_N': getdav['data']['cert_s_n'],
+                                'DAVR_OBJECT_BAN': getdav['data']['err_text'],
                                 'DAVR_OWNER': getdav['data']['subjects']['name'],
 
 
                             }
                             )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
