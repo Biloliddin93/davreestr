@@ -47,6 +47,7 @@ for data in response:
                             fields={
                                 'DAVR_INTEGRATION': 0,
                                 'DAVR_CADASTRAL_STATUS': zapret,
+                                'DAVR_STATUS_CODE': getdav['data']['result_code'],
                                 'DAVR_OWNER': getdav['data']['subjects']['name'],
 
 
