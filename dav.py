@@ -62,7 +62,7 @@ if getdav['data']['result_code'] < 3 :
                                 'DAVR_CERT_S_N': getdav['data']['cert_s_n'],
                                 'DAVR_OBJECT_BAN': getdav['data']['err_text'],
                                 'DAVR_OWNER': getdav['data']['subjects']['name'],
-                                'DAVR_OWNERSHIP_PERCENTAGE': getdav['data']['percent'],
+                                'DAVR_OWNERSHIP_PERCENTAGE': getdav['data']['subjects']['percent'],
 
 
                             }
